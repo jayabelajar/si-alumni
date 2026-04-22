@@ -68,6 +68,7 @@ public/uploads/*
 # Agent and temporary scripts
 agents_workflow/
 scratch/
+docs/
 builds/
 .gemini/
 
