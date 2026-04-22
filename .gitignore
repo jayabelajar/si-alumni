@@ -39,28 +39,48 @@ $RECYCLE.BIN/
 #-------------------------
 # Environment Files
 #-------------------------
-# These should never be under version control,
-# as it poses a security risk.
+# CodeIgniter 4 gitignore
+# --------------------------------------------------------------------
+
+# Environment files
 .env
-.vagrant
-Vagrantfile
+.env.production
+.env.development
+.env.testing
 
-#-------------------------
-# Temporary Files
-#-------------------------
-/writable/cache/*
-!/writable/cache/index.html
+# Dependency directories
+vendor/
 
-/writable/logs/*
-!/writable/logs/index.html
+# Writable directory
+writable/*
+!writable/.htaccess
+!writable/index.html
+!writable/cache/index.html
+!writable/debugbar/index.html
+!writable/logs/index.html
+!writable/session/index.html
+!writable/uploads/index.html
 
-/writable/session/*
-!/writable/session/index.html
+# User uploads (keeping placeholders)
+public/uploads/*
+!public/uploads/index.html
 
-/writable/uploads/*
-!/writable/uploads/index.html
+# Agent and temporary scripts
+agents_workflow/
+scratch/
+builds/
+.gemini/
 
-/writable/debugbar/*
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing
+tests/_support/Database/Migrations/
+tests/_support/Database/Seeds/
+phpunit.xml
+/debugbar/*
 !/writable/debugbar/index.html
 
 php_errors.log
