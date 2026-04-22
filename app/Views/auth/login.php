@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="mb-4">
-                <label for="password" class="form-label fw-medium">Password</label>
+                <label for="password" class="form-label fw-medium">Kata Sandi</label>
                 <div class="input-group">
                     <span class="input-group-text bg-transparent border-end-0">
                         <i class="bi bi-lock text-muted"></i>

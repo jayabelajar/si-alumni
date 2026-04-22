@@ -200,6 +200,7 @@
                                 <?php endif; ?>
                             </div>
                             <span class="fw-medium text-dark"><?= session()->get('username') ?></span>
+                            <i class="bi bi-chevron-down ms-1 text-muted small"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg mt-3">
                             <li><a class="dropdown-item py-2" href="/alumni/profile"><i class="bi bi-person me-2"></i> Profil Saya</a></li>
