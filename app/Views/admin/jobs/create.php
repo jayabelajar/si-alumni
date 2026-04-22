@@ -41,6 +41,11 @@
                             <label class="form-label fw-bold">Estimasi Gaji</label>
                             <input type="text" name="salary_range" class="form-control" placeholder="Contoh: Rp 5jt - 8jt">
                         </div>
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label fw-bold">Link Lamaran / Email</label>
+                            <input type="text" name="application_link" class="form-control" placeholder="Contoh: https://glints.com/... atau mailto:hrd@perusahaan.com" required>
+                            <small class="text-muted">Gunakan URL lengkap atau mailto:alamat@email.com</small>
+                        </div>
                         <div class="col-md-12 mb-4">
                             <label class="form-label fw-bold">Deskripsi & Syarat Pekerjaan</label>
                             <textarea name="description" class="form-control" rows="8" placeholder="Tuliskan detail lowongan di sini..." required></textarea>

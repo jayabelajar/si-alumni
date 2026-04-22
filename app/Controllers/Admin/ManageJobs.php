@@ -33,10 +33,11 @@ class ManageJobs extends BaseController
             'company'      => $this->request->getPost('company'),
             'location'     => $this->request->getPost('location'),
             'type'         => $this->request->getPost('type'),
-            'salary_range' => $this->request->getPost('salary_range'),
-            'description'  => $this->request->getPost('description'),
-            'posted_by'    => session()->get('user_id'),
-            'is_active'    => 1
+            'salary_range'     => $this->request->getPost('salary_range'),
+            'application_link' => $this->request->getPost('application_link'),
+            'description'      => $this->request->getPost('description'),
+            'posted_by'        => session()->get('user_id'),
+            'is_active'        => 1
         ];
 
         $jobModel->insert($data);
@@ -67,9 +68,10 @@ class ManageJobs extends BaseController
             'company'      => $this->request->getPost('company'),
             'location'     => $this->request->getPost('location'),
             'type'         => $this->request->getPost('type'),
-            'salary_range' => $this->request->getPost('salary_range'),
-            'description'  => $this->request->getPost('description'),
-            'is_active'    => $this->request->getPost('is_active') ?? 0
+            'salary_range'     => $this->request->getPost('salary_range'),
+            'application_link' => $this->request->getPost('application_link'),
+            'description'      => $this->request->getPost('description'),
+            'is_active'        => $this->request->getPost('is_active') ?? 0
         ];
 
         $jobModel->update($id, $data);

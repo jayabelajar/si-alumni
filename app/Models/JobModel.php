@@ -14,7 +14,7 @@ class JobModel extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         'title', 'company', 'location', 'type', 
-        'description', 'salary_range', 'posted_by', 'is_active'
+        'description', 'salary_range', 'application_link', 'posted_by', 'is_active'
     ];
 
     protected bool $allowEmptyInserts = false;

@@ -36,9 +36,9 @@
                         <p class="text-muted small mb-1">Tertarik dengan posisi ini?</p>
                         <h6 class="fw-bold text-dark mb-0">Klik tombol di samping untuk melamar.</h6>
                     </div>
-                    <button class="btn btn-primary px-5 py-3 rounded-pill fw-bold">
+                    <a href="<?= $job['application_link'] ?>" target="_blank" class="btn btn-primary px-5 py-3 rounded-pill fw-bold">
                         Lamar Sekarang <i class="bi bi-send-fill ms-2"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

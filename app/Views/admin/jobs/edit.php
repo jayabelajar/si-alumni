@@ -42,6 +42,11 @@
                             <input type="text" name="salary_range" class="form-control" value="<?= old('salary_range', $job['salary_range']) ?>">
                         </div>
                         <div class="col-md-12 mb-3">
+                            <label class="form-label fw-bold">Link Lamaran / Email</label>
+                            <input type="text" name="application_link" class="form-control" value="<?= old('application_link', $job['application_link']) ?>" placeholder="Contoh: https://glints.com/... atau mailto:hrd@perusahaan.com" required>
+                            <small class="text-muted">Gunakan URL lengkap atau mailto:alamat@email.com</small>
+                        </div>
+                        <div class="col-md-12 mb-3">
                             <label class="form-label fw-bold">Deskripsi & Syarat Pekerjaan</label>
                             <textarea name="description" class="form-control" rows="8" required><?= old('description', $job['description']) ?></textarea>
                         </div>

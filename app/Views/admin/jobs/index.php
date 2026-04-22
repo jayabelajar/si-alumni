@@ -20,6 +20,7 @@
                         <th class="border-0 px-4 py-3 text-muted fw-semibold small">POSISI & PERUSAHAAN</th>
                         <th class="border-0 px-4 py-3 text-muted fw-semibold small">LOKASI</th>
                         <th class="border-0 px-4 py-3 text-muted fw-semibold small">TIPE</th>
+                        <th class="border-0 px-4 py-3 text-muted fw-semibold small">LINK LAMARAN</th>
                         <th class="border-0 px-4 py-3 text-muted fw-semibold small">STATUS</th>
                         <th class="border-0 px-4 py-3 text-muted fw-semibold small text-end">AKSI</th>
                     </tr>
@@ -27,7 +28,7 @@
                 <tbody>
                     <?php if(empty($jobs)): ?>
                         <tr>
-                            <td colspan="5" class="text-center py-5 text-muted">Belum ada data lowongan.</td>
+                            <td colspan="6" class="text-center py-5 text-muted">Belum ada data lowongan.</td>
                         </tr>
                     <?php endif; ?>
                     <?php foreach($jobs as $job): ?>
@@ -41,6 +42,15 @@
                         <td class="px-4 py-3 text-muted small"><?= $job['location'] ?></td>
                         <td class="px-4 py-3">
                             <span class="badge bg-light text-dark border rounded-pill px-3"><?= $job['type'] ?></span>
+                        </td>
+                        <td class="px-4 py-3">
+                            <?php if($job['application_link']): ?>
+                                <a href="<?= $job['application_link'] ?>" target="_blank" class="text-truncate d-inline-block text-decoration-none small" style="max-width: 150px;">
+                                    <i class="bi bi-link-45deg"></i> Link/Email
+                                </a>
+                            <?php else: ?>
+                                <span class="text-muted small">-</span>
+                            <?php endif; ?>
                         </td>
                         <td class="px-4 py-3">
                             <?php if($job['is_active']): ?>
