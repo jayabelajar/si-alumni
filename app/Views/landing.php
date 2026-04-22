@@ -57,7 +57,6 @@
     <div class="container px-4">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 mb-3 fw-bold">Official Alumni Portal v2.0</span>
                 <h1 class="hero-title mb-4">Membangun Masa Depan Bersama Alumni.</h1>
                 <p class="text-muted fs-5 mb-5 lh-lg">Portal terpadu untuk menjalin networking, berbagi informasi lowongan kerja, dan melacak kesuksesan karir lulusan kami.</p>
                 <div class="d-flex flex-column flex-md-row gap-3">

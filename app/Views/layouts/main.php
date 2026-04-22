@@ -3,7 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $title ?? 'SI Alumni' ?></title>
+    
+    <!-- SEO Meta Tags -->
+    <title><?= $title ?? 'Alumni Hub & Career Center' ?> | Portal Resmi Alumni</title>
+    <meta name="description" content="Portal Alumni Hub & Career Center - Platform terpadu untuk menjalin networking, berbagi informasi lowongan kerja, dan melacak kesuksesan karir lulusan kami.">
+    <meta name="keywords" content="alumni, career center, bursa kerja, tracer study, networking alumni, portal kampus">
+    <meta name="author" content="Institusi Pendidikan">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?= current_url() ?>">
+    <meta property="og:title" content="<?= $title ?? 'Alumni Hub & Career Center' ?>">
+    <meta property="og:description" content="Terhubung kembali dengan rekan alumni dan temukan peluang karir terbaik di portal resmi kami.">
+    <meta property="og:image" content="<?= base_url('images/og_preview.png') ?>">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<?= current_url() ?>">
+    <meta property="twitter:title" content="<?= $title ?? 'Alumni Hub & Career Center' ?>">
+    <meta property="twitter:description" content="Terhubung kembali dengan rekan alumni dan temukan peluang karir terbaik di portal resmi kami.">
+    <meta property="twitter:image" content="<?= base_url('images/og_preview.png') ?>">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
